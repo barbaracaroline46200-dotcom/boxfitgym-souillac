@@ -895,7 +895,10 @@ strong { color: var(--white); }
 }
 .footer-bottom p, .footer-bottom a { font-size: 0.78rem; color: var(--gray); }
 .footer-bottom a:hover { color: var(--green); }
-.footer-bottom-links { display: flex; gap: 20px; }
+.footer-bottom-links { display: flex; gap: 20px; align-items: center; flex-wrap: wrap; }
+.footer-credit { font-size: 0.78rem; color: var(--gray); opacity: 0.7; }
+.footer-credit a { color: var(--green); font-weight: 500; }
+.footer-credit a:hover { color: var(--green); opacity: 0.85; }
 
 /* ==================
    PAGE HERO (inner pages)
