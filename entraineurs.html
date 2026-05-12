@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Rencontrez les entraîneurs de Box Fit Gym Souillac : Sliman, Hugo et Christophe. Des coachs diplômés, passionnés et bienveillants.">
+  <title>Nos Entraîneurs — Box Fit Gym Souillac</title>
+  <link rel="icon" type="image/png" href="images/logo.png">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <style>
+    .team-values {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+      margin: 55px 0 0;
+    }
+    .team-value-item {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      padding: 20px;
+      background: var(--dark-3);
+      border: 1px solid var(--dark-4);
+      border-radius: var(--radius-lg);
+    }
+    .team-value-item i {
+      font-size: 1.4rem;
+      color: var(--green);
+      flex-shrink: 0;
+    }
+    .team-value-item span {
+      font-family: var(--font-h);
+      font-size: 0.88rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--white);
+    }
+
+    .coach-quote {
+      background: var(--dark-3);
+      border-left: 3px solid var(--green);
+      border-radius: 0 var(--radius) var(--radius) 0;
+      padding: 16px 20px;
+      margin: 20px 0;
+      font-style: italic;
+      color: var(--gray-light);
+      font-size: 0.94rem;
+      line-height: 1.75;
+    }
+
+    .join-team {
+      background: var(--dark-3);
+      border: 1px solid var(--dark-4);
+      border-radius: var(--radius-xl);
+      padding: 50px;
+      text-align: center;
+      margin-top: 70px;
+    }
+    .join-team h3 { font-size: 1.8rem; margin-bottom: 14px; }
+    .join-team p  { max-width: 480px; margin: 0 auto 30px; }
+
+    .placeholder-notice {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(255,196,66,0.1);
+      border: 1px solid rgba(255,196,66,0.3);
+      color: #FFC542;
+      padding: 8px 16px;
+      border-radius: var(--radius);
+      font-size: 0.8rem;
+      font-family: var(--font-h);
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      margin-bottom: 18px;
+    }
+  </style>
+</head>
+<body>
+
+<!-- ========== NAVIGATION ========== -->
+<nav class="navbar scrolled" id="navbar">
+  <div class="nav-container">
+    <a href="index.html" class="nav-logo">
+      <img src="images/logo.png" alt="Box Fit Gym" class="nav-logo-img">
+      <div class="nav-logo-text">
+        <span class="nav-logo-main">BOX <span>FIT</span> GYM</span>
+        <span class="nav-logo-sub">Souillac &middot; Sport Santé</span>
+      </div>
+    </a>
+    <ul class="nav-menu" id="nav-menu">
+      <li><a href="index.html" class="nav-link">Accueil</a></li>
+      <li><a href="sports.html" class="nav-link">Nos Sports</a></li>
+      <li><a href="entraineurs.html" class="nav-link active">Nos Coachs</a></li>
+      <li><a href="contact.html#association" class="nav-link">L'Asso</a></li>
+      <li><a href="contact.html" class="nav-link">Contact</a></li>
+      <li><a href="contact.html#inscription" class="btn btn-primary nav-cta"><i class="fas fa-file-alt"></i> S'inscrire</a></li>
+    </ul>
+    <div class="hamburger" id="hamburger" aria-label="Menu" role="button" tabindex="0">
+      <span></span><span></span><span></span>
+    </div>
+  </div>
+</nav>
+
+<!-- ========== PAGE HERO ========== -->
+<section class="page-hero">
+  <div class="container page-hero-content">
+    <div class="breadcrumb">
+      <a href="index.html">Accueil</a>
+      <i class="fas fa-chevron-right"></i>
+      <span>Nos Entraîneurs</span>
+    </div>
+    <span class="section-label">L'équipe encadrante</span>
+    <h1 style="font-size:clamp(2.5rem,6vw,4.5rem);">Nos <span class="text-green">Entraîneurs</span></h1>
+    <div class="green-line"></div>
+    <p style="max-width:580px;font-size:1.05rem;margin-top:12px;">
+      Diplômés, bienveillants et passionnés, nos coachs sont là pour vous guider, vous encourager et vous faire progresser — à votre rythme, sans pression.
+    </p>
+
+    <div class="team-values">
+      <div class="team-value-item reveal d1">
+        <i class="fas fa-graduation-cap"></i>
+        <span>Diplômés d'État</span>
+      </div>
+      <div class="team-value-item reveal d2">
+        <i class="fas fa-heart"></i>
+        <span>Pédagogie bienveillante</span>
+      </div>
+      <div class="team-value-item reveal d3">
+        <i class="fas fa-users"></i>
+        <span>Tous niveaux</span>
+      </div>
+      <div class="team-value-item reveal d4">
+        <i class="fas fa-shield-alt"></i>
+        <span>Cadre sécurisé</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== LES COACHS ========== -->
+<section class="section section-dark">
+  <div class="container">
+
+    <div class="coaches-full-grid">
+
+      <!-- ===== SLIMAN ===== -->
+      <div class="coach-full-card reveal">
+        <div class="coach-full-photo">
+          <img src="images/sliman.png" alt="Sliman, entraîneur Box Fit Gym Souillac">
+        </div>
+        <div class="coach-full-body">
+          <div class="coach-full-title">Entraîneur — Sports de combat &amp; Pieds-poings</div>
+
+          <p class="coach-full-bio">
+            41 ans. Futur entraîneur de pancrace au Box Fit Gym. Parcours atypique : Sliman a commencé au club Trotters, puis a fréquenté les clubs de boxe anglaise et de grappling au gré de ses déplacements professionnels. Plusieurs années au Pro Boxing Arena avec Stéphane Riancho (boxe anglaise) et au Strong People avec Shakur Mehdi (grappling) en région toulousaine.
+          </p>
+          <p class="coach-full-bio">
+            Arrivé à Souillac il y a 2 ans sous l'impulsion de Christophe Le Hérissé, il a récemment obtenu ses diplômes de moniteur puis d'entraîneur (BMF1/BMF2) et attend la validation du BMF3. Ses mots d'ordre : <strong>travail, respect et humilité</strong>.
+          </p>
+        </div>
+      </div>
+
+      <!-- ===== HUGO ===== -->
+      <div class="coach-full-card reveal d2">
+        <div class="coach-full-photo">
+          <img src="images/hugo.png" alt="Hugo, entraîneur Box Fit Gym Souillac">
+        </div>
+        <div class="coach-full-body">
+          <div class="coach-full-title">Entraîneur — Sports de combat, Énergie &amp; Jeunes</div>
+
+          <p class="coach-full-bio">
+            27 ans. Animateur sport de contact full contact et disciplines associées depuis 5 ans. Hugo pratique les sports de combat depuis l'enfance, du Taekwondo au kick boxing, puis muay thaï et full contact à son arrivée à Souillac il y a 8 ans.
+          </p>
+          <p class="coach-full-bio">
+            Titulaire de plusieurs diplômes : ceinture noire 1er dan karaté full contact, gant bleu 2e degré kick boxing, AFA, DAF, BMF1 et BMF2 muay thaï et disciplines assimilées, bleu 2e degré pancrace.
+          </p>
+        </div>
+      </div>
+
+      <!-- ===== CHRISTOPHE ===== -->
+      <div class="coach-full-card reveal d3">
+        <div class="coach-full-photo">
+          <div class="coach-full-placeholder">
+            <i class="fas fa-user-clock"></i>
+            <span>Bientôt disponible</span>
+          </div>
+        </div>
+        <div class="coach-full-body">
+          <div class="placeholder-notice">
+            <i class="fas fa-clock"></i> Présentation à venir
+          </div>
+          <div class="coach-full-title">Entraîneur — Gym, Pilates &amp; Plein air</div>
+
+          <p class="coach-full-bio">
+            Christophe encadre une large palette de disciplines, du Pilates à la marche active en passant par la gym douce et la baby gym. Son approche douce et pédagogue en fait le coach idéal pour les débutants, les seniors et les enfants.
+          </p>
+          <p class="coach-full-bio">
+            La présentation complète de Christophe sera bientôt disponible. En attendant, n'hésitez pas à <a href="contact.html" style="color:var(--green);text-decoration:underline;">nous contacter</a> pour toute question sur ses cours.
+          </p>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Rejoindre l'équipe -->
+    <div class="join-team reveal">
+      <i class="fas fa-hands-helping" style="font-size:2.5rem;color:var(--green);margin-bottom:18px;display:block;"></i>
+      <h3>Vous souhaitez <span class="text-green">rejoindre l'équipe</span> ?</h3>
+      <p>Vous êtes éducateur sportif diplômé et nos valeurs vous correspondent ? N'hésitez pas à nous envoyer votre candidature.</p>
+      <a href="contact.html" class="btn btn-outline-green">
+        <i class="fas fa-envelope"></i> Nous contacter
+      </a>
+    </div>
+
+  </div>
+</section>
+
+<!-- ========== CTA ========== -->
+<section class="cta-section">
+  <div class="container">
+    <div class="reveal">
+      <h2>Envie de les <span class="text-green">rencontrer</span> ?</h2>
+      <p>La meilleure façon de découvrir nos coachs, c'est de venir essayer une séance. On vous attend !</p>
+      <div class="cta-buttons">
+        <a href="contact.html" class="btn btn-primary"><i class="fas fa-envelope"></i> Prendre contact</a>
+        <a href="sports.html" class="btn btn-outline"><i class="fas fa-dumbbell"></i> Voir nos sports</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== FOOTER ========== -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+
+      <div class="footer-brand">
+        <a href="index.html" class="nav-logo" style="margin-bottom:18px;">
+          <img src="images/logo.png" alt="Box Fit Gym" class="nav-logo-img">
+          <div class="nav-logo-text">
+            <span class="nav-logo-main">BOX <span>FIT</span> GYM</span>
+            <span class="nav-logo-sub">Souillac &middot; Sport Santé</span>
+          </div>
+        </a>
+        <p>Club de sport pour tous, de 4 à 100 ans. Reconnu Sport Santé, nous vous accueillons dans une ambiance conviviale à Souillac (46).</p>
+        <div class="footer-social">
+          <a href="https://www.facebook.com/profile.php?id=61565013485774" class="social-link" aria-label="Facebook Box Fit Gym" target="_blank" rel="noopener"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://www.instagram.com/box.fit.gym.souillac" class="social-link" aria-label="Instagram @box.fit.gym.souillac" target="_blank" rel="noopener"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+
+      <div>
+        <h4 class="footer-heading">Navigation</h4>
+        <ul class="footer-links">
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="sports.html">Nos Sports</a></li>
+          <li><a href="entraineurs.html">Nos Coachs</a></li>
+          <li><a href="contact.html#association">L'Association</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="footer-heading">Documents</h4>
+        <ul class="footer-links">
+          <li><a href="documents/fiche-inscription-boxe.pdf" download><i class="fas fa-download"></i> Inscription Boxe</a></li>
+          <li><a href="documents/fiche-inscription-gym.pdf" download><i class="fas fa-download"></i> Inscription Gym</a></li>
+          <li><a href="documents/reglement-interieur.pdf" download><i class="fas fa-download"></i> Règlement intérieur</a></li>
+          <li><a href="mentions-legales.html">Mentions légales</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="footer-heading">Nous trouver</h4>
+        <div class="footer-contact-item">
+          <i class="fas fa-map-marker-alt"></i>
+          <p>Route de Martel<br>46200 Souillac</p>
+        </div>
+        <div class="footer-contact-item">
+          <i class="fas fa-phone"></i>
+          <p>06-86-98-74-47</p>
+        </div>
+        <div class="footer-contact-item">
+          <i class="fas fa-envelope"></i>
+          <a href="mailto:asso.fullcontact@gmail.com">asso.fullcontact@gmail.com</a>
+        </div>
+        <div class="footer-contact-item">
+          <i class="fab fa-instagram"></i>
+          <a href="https://www.instagram.com/box.fit.gym.souillac" target="_blank" rel="noopener">@box.fit.gym.souillac</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2025 Box Fit Gym &mdash; Association loi 1901 &mdash; Souillac (46)</p>
+      <div class="footer-bottom-links">
+        <a href="mentions-legales.html">Mentions légales</a>
+        <a href="mentions-legales.html#confidentialite">Confidentialité</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
