@@ -18,6 +18,17 @@
 </head>
 <body>
 
+<!-- ========== BANDEAU RENTRÉE (promo saisonnière — retirer après la rentrée) ========== -->
+<a class="rentree-bar" href="contact.html#inscription" aria-label="C'est la rentrée : vos 2 premières séances d'essai sont offertes, inscrivez-vous">
+  <span class="rentree-bar__inner">
+    <i class="fas fa-graduation-cap" aria-hidden="true"></i>
+    <strong>C'est la rentrée&nbsp;!</strong>
+    <span class="rentree-bar__sep">—</span>
+    <span class="rentree-bar__long">Vos 2 premières séances d'essai sont offertes</span>
+    <span class="rentree-bar__cta">J'en profite <i class="fas fa-arrow-right" aria-hidden="true"></i></span>
+  </span>
+</a>
+
 <!-- ========== NAVIGATION ========== -->
 <nav class="navbar" id="navbar">
   <div class="nav-container">
@@ -49,6 +60,13 @@
   <div class="hero-deco"></div>
   <div class="hero-circle hero-circle-1"></div>
   <div class="hero-circle hero-circle-2"></div>
+
+  <!-- Pastille rentrée (promo saisonnière — retirer après la rentrée) -->
+  <a class="hero-promo" href="contact.html#inscription" aria-label="C'est la rentrée : viens faire un essai gratuit">
+    <span class="hero-promo__kicker">C'est la</span>
+    <span class="hero-promo__title">Rentrée</span>
+    <span class="hero-promo__sub">Viens faire un essai gratuit&nbsp;!</span>
+  </a>
 
   <div class="hero-content">
     <div class="hero-badge">
@@ -89,7 +107,7 @@
         <span class="hero-stat-label">ans : âge min.</span>
       </div>
       <div class="hero-stat">
-        <span class="hero-stat-number" data-counter="6">6</span>
+        <span class="hero-stat-number" data-counter="7">7</span>
         <span class="hero-stat-label">jours / semaine</span>
       </div>
     </div>
@@ -220,10 +238,13 @@
       <span class="section-label">Organisation</span>
       <h2>Notre <span class="text-green">Planning</span></h2>
       <div class="green-line"></div>
-      <p class="section-sub center">Du lundi au samedi, un cours vous attend. Trouvez le créneau qui vous convient !</p>
+      <p class="section-sub center">Du lundi au dimanche, un cours vous attend. Trouvez le créneau qui vous convient !</p>
     </div>
     <div class="planning-wrap reveal">
-      <img src="images/planning.jpg" alt="Planning des cours Box Fit Gym Souillac" loading="lazy">
+      <a href="images/planning.jpg" target="_blank" rel="noopener" class="planning-zoom" aria-label="Ouvrir le planning en grand dans un nouvel onglet">
+        <img src="images/planning.jpg" alt="Planning des cours Box Fit Gym Souillac — saison 2026/2027" loading="lazy">
+        <span class="planning-zoom-hint"><i class="fas fa-expand"></i> Agrandir</span>
+      </a>
       <div class="planning-note">
         <i class="fas fa-info-circle"></i>
         <span>Le planning peut être sujet à modifications. Contactez-nous pour confirmer les horaires : <strong style="color:var(--white);">06-86-98-74-47</strong> (Christophe, entraîneur référent)</span>
@@ -319,9 +340,9 @@
       <div class="download-card reveal d1">
         <div class="dl-icon"><i class="fas fa-file-pdf"></i></div>
         <div class="dl-info">
-          <h4>Inscription Boxe 2025-26</h4>
-          <p>Fiche d'inscription pour les cours de Boxe Full Kick, Lady Kick et Full Kid.</p>
-          <a href="documents/fiche-inscription-boxe.pdf" class="dl-btn" download>
+          <h4>Inscription Sports de combat 2026-27</h4>
+          <p>Fiche d'inscription pour la Boxe Kick Full, le Pancrace, Box Kick Ladies et les cours enfants.</p>
+          <a href="documents/fiche-inscription-boxe.pdf" class="dl-btn" download="Inscription Sports de combat - Box Fit Gym Souillac 2026-2027.pdf">
             <i class="fas fa-download"></i> Télécharger
           </a>
         </div>
@@ -330,9 +351,9 @@
       <div class="download-card reveal d2">
         <div class="dl-icon"><i class="fas fa-file-pdf"></i></div>
         <div class="dl-info">
-          <h4>Inscription Gym 2025-26</h4>
-          <p>Fiche d'inscription pour les cours de Gym, Pilates, Renfo, Marche et autres.</p>
-          <a href="documents/fiche-inscription-gym.pdf" class="dl-btn" download>
+          <h4>Inscription Sport Santé 2026-27</h4>
+          <p>Fiche d'inscription pour la Gym douce, le Pilates, le Cross training, le Box Fit Step, Bodyzen et la Marche.</p>
+          <a href="documents/fiche-inscription-gym.pdf" class="dl-btn" download="Inscription Sport Sante - Box Fit Gym Souillac 2026-2027.pdf">
             <i class="fas fa-download"></i> Télécharger
           </a>
         </div>
@@ -343,7 +364,7 @@
         <div class="dl-info">
           <h4>Règlement intérieur</h4>
           <p>Les règles de bonne conduite au sein du club, pour que tout le monde soit à l'aise.</p>
-          <a href="documents/reglement-interieur.pdf" class="dl-btn" download>
+          <a href="documents/reglement-interieur.pdf" class="dl-btn" download="Reglement interieur - Box Fit Gym Souillac.pdf">
             <i class="fas fa-download"></i> Télécharger
           </a>
         </div>
@@ -371,11 +392,11 @@
         <a href="contact.html" class="btn btn-primary">
           <i class="fas fa-envelope"></i> Nous contacter
         </a>
-        <a href="documents/fiche-inscription-boxe.pdf" class="btn btn-outline" download>
-          <i class="fas fa-file-alt"></i> Fiche Boxe
+        <a href="documents/fiche-inscription-boxe.pdf" class="btn btn-outline" download="Inscription Sports de combat - Box Fit Gym Souillac 2026-2027.pdf">
+          <i class="fas fa-file-alt"></i> Fiche Sports de combat
         </a>
-        <a href="documents/fiche-inscription-gym.pdf" class="btn btn-outline" download>
-          <i class="fas fa-file-alt"></i> Fiche Gym
+        <a href="documents/fiche-inscription-gym.pdf" class="btn btn-outline" download="Inscription Sport Sante - Box Fit Gym Souillac 2026-2027.pdf">
+          <i class="fas fa-file-alt"></i> Fiche Sport Santé
         </a>
       </div>
     </div>
@@ -416,8 +437,8 @@
       <div>
         <h4 class="footer-heading">Documents</h4>
         <ul class="footer-links">
-          <li><a href="documents/fiche-inscription-boxe.pdf" download><i class="fas fa-download"></i> Inscription Boxe</a></li>
-          <li><a href="documents/fiche-inscription-gym.pdf" download><i class="fas fa-download"></i> Inscription Gym</a></li>
+          <li><a href="documents/fiche-inscription-boxe.pdf" download><i class="fas fa-download"></i> Inscription Sports de combat</a></li>
+          <li><a href="documents/fiche-inscription-gym.pdf" download><i class="fas fa-download"></i> Inscription Sport Santé</a></li>
           <li><a href="documents/reglement-interieur.pdf" download><i class="fas fa-download"></i> Règlement intérieur</a></li>
           <li><a href="mentions-legales.html">Mentions légales</a></li>
         </ul>
